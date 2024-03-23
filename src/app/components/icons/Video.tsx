@@ -6,23 +6,19 @@ const Video: React.FC = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="w-6 h-6"
+      className="w-4 h-4"
     >
       <defs>
-        <linearGradient
-          id="yellowOrangeGradient"
-          x1="0%"
-          y1="0%"
-          x2="100%"
-          y2="100%"
-        >
-          <stop offset="0%" style={{ stopColor: "yellow", stopOpacity: 1 }} />
-          <stop offset="100%" style={{ stopColor: "orange", stopOpacity: 1 }} />
+        <linearGradient id="videoGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" style={{ stopColor: "#4a80f6", stopOpacity: 1 }} />
+          <stop
+            offset="100%"
+            style={{ stopColor: "#68f205", stopOpacity: 1 }}
+          />
         </linearGradient>
       </defs>
       <path
-        fill="url(#yellowOrangeGradient)"
-        fill-rule="evenodd"
+        fill="url(#videoGradient)"
         d="M4.5 4.5a3 3 0 0 0-3 3v9a3 3 0 0 0 3 3h8.25a3 3 0 0 0 3-3v-9a3 3 0 0 0-3-3H4.5ZM19.94 18.75l-2.69-2.69V7.94l2.69-2.69c.944-.945 2.56-.276 2.56 1.06v11.38c0 1.336-1.616 2.005-2.56 1.06Z"
       />
       ;
