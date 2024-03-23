@@ -14,14 +14,6 @@ export default function Home() {
             connect, share, and inspire.
           </p>
         </div>
-        {/* <div className="min-w-[350px] w-[350px]  relative">
-          <Image
-            src="/profilePic.png"
-            layout="fill"
-            objectFit="contain"
-            alt="Picture of the author"
-          />
-        </div> */}
       </div>
     </main>
   );
