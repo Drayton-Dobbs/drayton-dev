@@ -1,13 +1,13 @@
 "use client";
 
 import React, { useState } from "react";
-import Sun from "./icons/Sun";
-import Moon from "./icons/Moon";
-import Home from "./icons/Home";
-import About from "./icons/About";
-import Book from "./icons/Book";
-import Video from "./icons/Video";
-import CodeBracket from "./icons/CodeBracket";
+import Sun from "../icons/Sun";
+import Moon from "../icons/Moon";
+import Home from "../icons/Home";
+import About from "../icons/About";
+import Book from "../icons/Book";
+import Video from "../icons/Video";
+import CodeBracket from "../icons/CodeBracket";
 
 const Navbar: React.FC = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
