@@ -16,29 +16,59 @@ const Navbar: React.FC = () => {
     setIsDarkTheme(!isDarkTheme);
   };
   return (
-    <div className=" h-[60px] bg-main border-b-highLight border-b-2 flex justify-between items-center px-4">
+    <div className="h-[60px] bg-main border-b-highLight border-b-2 flex justify-between items-center px-4">
       <div className="flex">
-        <div className="flex justify-center px-2 py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
-          <Home /> <div className="ml-1">Home</div>
+        <div className="flex justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+          <div className="iconContainer">
+            <Home />{" "}
+          </div>
+          <div>
+            {" "}
+            <div className="md:ml-1 text-sm">Home</div>
+          </div>
         </div>
-        <div className="flex justify-center px-2 py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
-          <About /> <div className="ml-1">About</div>
+        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+          <div className="iconContainer">
+            <About />{" "}
+          </div>
+          <div>
+            {" "}
+            <div className="md:ml-1 text-sm">About</div>
+          </div>
         </div>
-        <div className="flex justify-center px-2 py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
-          <Book /> <div className="ml-1">Blog</div>
+        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+          <div className="iconContainer">
+            <Book />{" "}
+          </div>
+          <div>
+            {" "}
+            <div className="md:ml-1 text-sm">Blog</div>
+          </div>
         </div>
 
-        <div className="flex justify-center px-2 py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
-          <Video /> <div className="ml-1">Vlog</div>
+        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+          <div className="iconContainer">
+            <Video />{" "}
+          </div>
+          <div>
+            {" "}
+            <div className="md:ml-1 text-sm">Vlog</div>
+          </div>
         </div>
 
-        <div className="flex justify-center px-2 py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
-          <CodeBracket /> <div className="ml-1">Projects</div>
+        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+          <div className="iconContainer">
+            <CodeBracket />{" "}
+          </div>
+          <div>
+            {" "}
+            <div className="md:ml-1 text-sm">Projects</div>
+          </div>
         </div>
       </div>
       <div
         onClick={() => updateTheme()}
-        className="px-2 py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight"
+        className="p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight"
       >
         {isDarkTheme === true ? <Sun /> : <Moon />}
       </div>

@@ -6,7 +6,7 @@ const Sun: React.FC = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="w-6 h-6"
+      className="w-5 h-5 md:w-6 md:h-6"
     >
       <defs>
         <linearGradient

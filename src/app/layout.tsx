@@ -21,11 +21,11 @@ export default function RootLayout({
       <body
         className={`${inter.className} bg-main w-full flex flex-col items-center`}
       >
-        <div className="max-w-[1024px] w-full">
+        <div className="max-w-[716px] w-full">
           <Navbar />
         </div>
 
-        <div className="h-[calc(100vh-60px)] max-w-[1024px] w-full">
+        <div className="h-[calc(100vh-60px)] max-w-[716px] w-full">
           {children}
         </div>
       </body>
