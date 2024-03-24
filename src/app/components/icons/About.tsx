@@ -10,11 +10,11 @@ const About: React.FC = () => {
     >
       <defs>
         <linearGradient id="aboutGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" style={{ stopColor: "#90EE90", stopOpacity: 1 }} />{" "}
+          <stop offset="0%" style={{ stopColor: "#FFFFE0", stopOpacity: 1 }} />{" "}
           {/* Red */}
           <stop
             offset="100%"
-            style={{ stopColor: "#006400", stopOpacity: 1 }}
+            style={{ stopColor: "#FFD700", stopOpacity: 1 }}
           />{" "}
           {/* Darker Red */}
         </linearGradient>
