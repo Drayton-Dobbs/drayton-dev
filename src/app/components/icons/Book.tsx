@@ -6,12 +6,17 @@ const Book: React.FC = () => {
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 24 24"
       fill="currentColor"
-      className="w-4 h-4"
+      className="w-6 h-6"
     >
       <defs>
         <linearGradient id="bookGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="25%" stopColor="#5005f2" />
-          <stop offset="75%" stopColor="#68f205" />
+          <stop offset="0%" style={{ stopColor: "#FF69B4", stopOpacity: 1 }} />{" "}
+          {/* Red */}
+          <stop
+            offset="100%"
+            style={{ stopColor: "#BA55D3", stopOpacity: 1 }}
+          />{" "}
+          {/* Darker Red */}
         </linearGradient>
       </defs>
 
