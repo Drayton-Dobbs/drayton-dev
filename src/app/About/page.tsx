@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function About() {
   return (
     <div className="text-white">
@@ -19,25 +21,35 @@ export default function About() {
       </p>{" "}
       <p className="pb-2">
         Back then, I had no real way to dive into coding until, a few years
-        later, I stumbled upon a free web development bootcamp called IAmBham.
-        In the beginning, I thought this industry would definitely be more
+        later, I stumbled upon a free web development bootcamp called{" "}
+        <Link href={"https://www.linkedin.com/company/innovatebirmingham/"}>
+          <span className="py-4 font-bold text-lg bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
+            IamBham - Innovate Birmingham
+          </span>
+        </Link>
+        . In the beginning, I thought this industry would definitely be more
         lucrative than being a server. So financial gain was my main reason for
         exploring this industry until I eventually (as soon as I learned CSS
         haha) found a love for designing well-made responsive apps.
       </p>{" "}
       <p className="pb-2">
-        Over the past seven years, I&apos;ve honed my skills and expertise in
-        key areas of web development. I specialize in JavaScript (JS),
-        TypeScript (TS), Node.js, and React/Next.js, leveraging these
-        technologies to build dynamic and responsive web applications. My
-        experience includes a four-month intensive learning through the IAmBham
-        web development course, followed by a year of hands-on experience
-        applying for jobs and refining my skills.
+        Over the past five years, I&apos;ve honed my skills and expertise in key
+        areas of web development. I specialize in JavaScript (JS), TypeScript
+        (TS), Node.js, and React/Next.js, leveraging these technologies to build
+        dynamic and responsive web applications. My experience includes a
+        four-month intensive learning through the IAmBham web development
+        course, followed by a year of hands-on experience applying for jobs and
+        refining my skills.
       </p>{" "}
       <p className="pb-2">
         {" "}
-        In late 2019, I found my first job in the field at Moss Rock Solutions,
-        formerly known as Scott Howard Consulting, where I&apos;ve had the
+        In late 2019, I found my first job in the field at{" "}
+        <Link href={"https://mossrock.com"}>
+          <span className="py-4 font-bold text-lg bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
+            Moss Rock Solutions
+          </span>
+        </Link>
+        , formerly known as Scott Howard Consulting, where I&apos;ve had the
         privilege of contributing to impactful projects and expanding my
         knowledge in the tech industry. This journey has not only shaped me as a
         developer and human but also instilled in me a passion for creating
