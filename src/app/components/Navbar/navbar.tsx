@@ -19,7 +19,10 @@ const Navbar: React.FC = () => {
   return (
     <div className="h-[60px] bg-main border-b-highLight border-b-2 flex justify-between items-center px-4">
       <div className="flex">
-        <div className="flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+        <Link
+          href={"/"}
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+        >
           <div className="iconContainer">
             <Home />{" "}
           </div>
@@ -27,10 +30,10 @@ const Navbar: React.FC = () => {
             {" "}
             <div className="md:ml-1 text-sm">Home</div>
           </div>
-        </div>
+        </Link>
         <Link
           href={"/About"}
-          className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight"
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
         >
           <div className="iconContainer">
             <About />{" "}
@@ -40,7 +43,10 @@ const Navbar: React.FC = () => {
             <div className="md:ml-1 text-sm">About</div>
           </div>
         </Link>
-        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+        <Link
+          href={"/Blog"}
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+        >
           <div className="iconContainer">
             <Book />{" "}
           </div>
@@ -48,9 +54,12 @@ const Navbar: React.FC = () => {
             {" "}
             <div className="md:ml-1 text-sm">Blog</div>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+        <Link
+          href={"/Vlog"}
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+        >
           <div className="iconContainer">
             <Video />{" "}
           </div>
@@ -58,9 +67,12 @@ const Navbar: React.FC = () => {
             {" "}
             <div className="md:ml-1 text-sm">Vlog</div>
           </div>
-        </div>
+        </Link>
 
-        <div className="flex justify-center items-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight">
+        <Link
+          href={"/Projects"}
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+        >
           <div className="iconContainer">
             <CodeBracket />{" "}
           </div>
@@ -68,7 +80,7 @@ const Navbar: React.FC = () => {
             {" "}
             <div className="md:ml-1 text-sm">Projects</div>
           </div>
-        </div>
+        </Link>
       </div>
       <div
         onClick={() => updateTheme()}
