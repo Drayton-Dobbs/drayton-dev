@@ -5,8 +5,9 @@ export default function About() {
         About Me
       </div>
       <p className="pb-2">
-        Hey there, I’m Drayton! Thanks for visiting my corner of the internet.
-        Let me share a bit about my journey into the world of web development.{" "}
+        Hey there, I&apos;m Drayton! Thanks for visiting my corner of the
+        internet. Let me share a bit about my journey into the world of web
+        development.{" "}
       </p>{" "}
       <p className="pb-2">
         Growing up in poverty, I was determined to break the cycle and strive
@@ -25,29 +26,29 @@ export default function About() {
         haha) found a love for designing well-made responsive apps.
       </p>{" "}
       <p className="pb-2">
-        Over the past seven years, I've honed my skills and expertise in key
-        areas of web development. I specialize in JavaScript (JS), TypeScript
-        (TS), Node.js, and React/Next.js, leveraging these technologies to build
-        dynamic and responsive web applications. My experience includes a
-        four-month intensive learning through the IAmBham web development
-        course, followed by a year of hands-on experience applying for jobs and
-        refining my skills.
+        Over the past seven years, I&apos;ve honed my skills and expertise in
+        key areas of web development. I specialize in JavaScript (JS),
+        TypeScript (TS), Node.js, and React/Next.js, leveraging these
+        technologies to build dynamic and responsive web applications. My
+        experience includes a four-month intensive learning through the IAmBham
+        web development course, followed by a year of hands-on experience
+        applying for jobs and refining my skills.
       </p>{" "}
       <p className="pb-2">
         {" "}
         In late 2019, I found my first job in the field at Moss Rock Solutions,
-        formerly known as Scott Howard Consulting, where I've had the privilege
-        of contributing to impactful projects and expanding my knowledge in the
-        tech industry. This journey has not only shaped me as a developer and
-        human but also instilled in me a passion for creating innovative
-        solutions and pushing the boundaries of what's possible in web
-        development.{" "}
+        formerly known as Scott Howard Consulting, where I&apos;ve had the
+        privilege of contributing to impactful projects and expanding my
+        knowledge in the tech industry. This journey has not only shaped me as a
+        developer and human but also instilled in me a passion for creating
+        innovative solutions and pushing the boundaries of what&apos;s possible
+        in web development.{" "}
       </p>{" "}
       <p className="pb-2">
         {" "}
-        I'm excited to share my experiences and insights with you, and I invite
-        you to explore more about my work and connect with me to discuss all
-        things tech and beyond.
+        I&apos;m excited to share my experiences and insights with you, and I
+        invite you to explore more about my work and connect with me to discuss
+        all things tech and beyond.
       </p>
     </div>
   );
