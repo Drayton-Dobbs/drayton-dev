@@ -5,7 +5,7 @@ export default function About() {
   return (
     <div className="text-white">
       <div className="py-4 flex justify-between items-center">
-        <span className="font-bold text-6xl bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
+        <span className="font-bold text-7xl bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
           About Me
         </span>
         <div className="h-36 w-36 rounded-full bg-white overflow-hidden relative">
@@ -18,7 +18,7 @@ export default function About() {
           />
         </div>
       </div>
-      <p className="tracking-wide">
+      <p className="tracking-wide leading-relaxed">
         Hey there, I&apos;m Drayton! Thanks for visiting my corner of the
         internet. Let me share a bit about my journey into the world of web
         development.{" "}
@@ -26,7 +26,7 @@ export default function About() {
       <div className="flex justify-start">
         <div className="border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide">
+      <p className="tracking-wide leading-relaxed">
         Growing up in poverty, I was determined to break the cycle and strive
         for more. When I was younger (15-17), I used to help my dad with his
         cleaning business. One day, while cleaning a financial office, I saw
