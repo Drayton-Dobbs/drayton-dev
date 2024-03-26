@@ -58,7 +58,7 @@ export default function RootLayout({
     <html lang="en" style={{ height: "100%" }}>
       <body
         className={`${inter.className} bg-main w-full flex flex-col items-center`}
-        style={{ height: "100%" }}
+        style={{}}
       >
         <div className="max-w-[716px] w-full flex flex-col flex-grow">
           <Navbar />
