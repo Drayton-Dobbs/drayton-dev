@@ -21,12 +21,12 @@ export default function About() {
         business. We cleaned all sorts of offices in Birmingham Alabama: law,
         financial, sports medicine, and various other offices. Coming from a
         small town with a population, at the time, of sub two thousand, I was
-        fascinated by all the tech. Computers with different GUI's, charts,
+        fascinated by all the tech. Computers with different GUI&apos;s, charts,
         graphs, schedules. I just found it all so neat. In particular, a
         financial office with bright colored stock market graphs all over the
         wall. Always having an intrest in math and science, I was quite
-        interested in creating these things for myself. I just didn't know where
-        to start.
+        interested in creating these things for myself. I just didn&apos;t know
+        where to start.
       </p>{" "}
       <div className="flex justify-start">
         <div className="mx-6 border-b w-1/12 my-4"></div>
