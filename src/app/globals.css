@@ -24,8 +24,4 @@ scrollbar-color: #333 #666; /* Dark colors for the track and thumb */
 scrollbar-width: thin; /* Adjust the width as needed */
 
 
-@media only screen and (max-width: 768px) {
-  .iconContainer {
-    display: none;
-  }
-}
+

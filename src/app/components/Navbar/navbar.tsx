@@ -23,7 +23,7 @@ const Navbar: React.FC = () => {
           href={"/"}
           className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
         >
-          <div className="iconContainer">
+          <div className="hidden sm:block">
             <Home />{" "}
           </div>
           <div>
@@ -35,7 +35,7 @@ const Navbar: React.FC = () => {
           href={"/About"}
           className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
         >
-          <div className="iconContainer">
+          <div className="hidden sm:block">
             <About />{" "}
           </div>
           <div>
@@ -47,7 +47,7 @@ const Navbar: React.FC = () => {
           href={"/Blog"}
           className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
         >
-          <div className="iconContainer">
+          <div className="hidden sm:block">
             <Book />{" "}
           </div>
           <div>
@@ -60,7 +60,7 @@ const Navbar: React.FC = () => {
           href={"/Vlog"}
           className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
         >
-          <div className="iconContainer">
+          <div className="hidden sm:block">
             <Video />{" "}
           </div>
           <div>
@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
           href={"/Projects"}
           className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
         >
-          <div className="iconContainer">
+          <div className="hidden sm:block">
             <CodeBracket />{" "}
           </div>
           <div>
