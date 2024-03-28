@@ -4,68 +4,56 @@ import Link from "next/link";
 export default function About() {
   return (
     <div className="text-white">
-      <div className="py-4 flex justify-between items-center">
-        <span className="font-bold text-7xl bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
-          About Me
-        </span>
-        <div className="h-36 w-36 rounded-full bg-white overflow-hidden relative">
-          <Image
-            src={"/Drayton-Pro.jpg"}
-            layout="fill"
-            objectFit="cover"
-            alt="Picture of Author, Drayton."
-            className="rounded-full"
-          />
-        </div>
+      <div className="py-4 pl-5 font-bold text-4xl sm:text-7xl bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
+        About Me
       </div>
-      <p className="tracking-wide leading-relaxed">
+      <p className="tracking-wide px-6">
         Hey there, I&apos;m Drayton! Thanks for visiting my corner of the
         internet. Let me share a bit about my journey into the world of web
         development.{" "}
       </p>{" "}
       <div className="flex justify-start">
-        <div className="border-b w-1/12 my-4"></div>
+        <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide leading-relaxed">
+      <p className="tracking-wide px-6">
         Growing up in poverty, I was determined to break the cycle and strive
-        for more. When I was younger (15-17), I used to help my dad with his
-        cleaning business. One day, while cleaning a financial office, I saw
-        these cool monitors with graphs and heat maps all over the wall—numbers,
-        data, and bright colors everywhere. That moment sparked my interest in
-        coding and app design.
+        for more. When I was younger, I used to help my dad with his cleaning
+        business. We cleaned all sorts of offices in Birmingham Alabama: law,
+        financial, sports medicine, and various other offices. Coming from a
+        small town with a population, at the time, of sub two thousand, I was
+        fascinated by all the tech. Computers with different GUI's, charts,
+        graphs, schedules. I just found it all so neat. In particular, a
+        financial office with bright colored stock market graphs all over the
+        wall. Always having an intrest in math and science, I was quite
+        interested in creating these things for myself. I just didn't know where
+        to start.
       </p>{" "}
       <div className="flex justify-start">
-        <div className="border-b w-1/12 my-4"></div>
+        <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide">
-        Back then, I had no real way to dive into coding until, a few years
-        later, I stumbled upon a free web development bootcamp called{" "}
+      <p className="tracking-wide px-6">
+        Back then, I had no real way to dive into coding until, years later,
+        after being in the service industry for almost five years. I was
+        introduced, by a good friend, to a free web development bootcamp called{" "}
         <Link href={"https://www.linkedin.com/company/innovatebirmingham/"}>
           <span className="py-4 font-bold text-lg bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
             IamBham - Innovate Birmingham
           </span>
         </Link>
-        . In the beginning, I thought this industry would definitely be more
-        lucrative than being a server. So financial gain was my main reason for
-        exploring this industry until I eventually (as soon as I learned CSS
-        haha) found a love for designing well-made responsive apps.
+        . The class would be 9-5, 40 hours a week for 4 months. The problem was
+        I was already serving at a high end resturaunt 40 hours a week. If I
+        were to take on the coding bootcamp, it would mean switching my current
+        work schedule to nights and coding during the day. I decided to take on
+        this challenge. In the beginning, I thought this industry would
+        definitely be more lucrative than being a server. So financial gain was
+        my main reason for exploring this industry until I eventually (as soon
+        as I learned CSS haha) found a love for designing well-made responsive
+        apps.
       </p>{" "}
       <div className="flex justify-start">
-        <div className="border-b w-1/12 my-4"></div>
+        <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide ">
-        Over the past five years, I&apos;ve honed my skills and expertise in key
-        areas of web development. I specialize in JavaScript (JS), TypeScript
-        (TS), Node.js, and React/Next.js, leveraging these technologies to build
-        dynamic and responsive web applications. My experience includes a
-        four-month intensive learning through the IAmBham web development
-        course, followed by a year of hands-on experience applying for jobs and
-        refining my skills.
-      </p>{" "}
-      <div className="flex justify-start">
-        <div className="border-b w-1/12 my-4"></div>
-      </div>
-      <p className="tracking-wide ">
+      <p className="tracking-wide px-6">
         {" "}
         In late 2019, I found my first job in the field at{" "}
         <Link href={"https://mossrock.com"}>
@@ -81,9 +69,18 @@ export default function About() {
         in web development.{" "}
       </p>{" "}
       <div className="flex justify-start">
-        <div className="border-b w-1/12 my-4"></div>
+        <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide">
+      <p className="tracking-wide px-6">
+        Over the past five years, I&apos;ve honed my skills and expertise in key
+        areas of web development. I specialize in JavaScript (JS), TypeScript
+        (TS), Node.js, and React/Next.js, leveraging these technologies to build
+        dynamic and responsive web applications.
+      </p>{" "}
+      <div className="flex justify-start">
+        <div className="mx-6 border-b w-1/12 my-4"></div>
+      </div>
+      <p className="tracking-wide px-6">
         {" "}
         I&apos;m excited to share my experiences and insights with you, and I
         invite you to explore more about my work and connect with me to discuss
