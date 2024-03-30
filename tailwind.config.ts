@@ -10,6 +10,8 @@ const config: Config = {
     extend: {
       colors: {
         main: '#1b1b1b',
+        secondary: '#333333',
+        third: '#666666',
         highLight: "rgb(48,48,48)",
         brightPink: "#AB0FBF",
         brightYellow: "rgb(244,242,87)"
