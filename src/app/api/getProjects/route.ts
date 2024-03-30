@@ -1,10 +1,10 @@
-import { NextResponse } from 'next/server';
+import { NextResponse, NextRequest } from 'next/server';
 import { GitHubRepository } from './projectType';
 import dotenv from 'dotenv';
 
 dotenv.config();
 
-export async function getMyProjects() {
+export async function GET(req: NextRequest) {
   try {
     const response = await fetch('https://api.github.com/user/repos', {
     headers: {
@@ -38,4 +38,3 @@ export async function getMyProjects() {
   
 }
 
-export const GET = getMyProjects
