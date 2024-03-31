@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Sun from "../icons/Sun";
 import Moon from "../icons/Moon";
 import Home from "../icons/Home";
@@ -13,11 +13,24 @@ import Link from "next/link";
 const Navbar: React.FC = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
 
+  useEffect(() => {
+    if (isDarkTheme === true) {
+      document.documentElement.classList.add("dark");
+      localStorage.theme = "dark";
+      console.log(localStorage.theme);
+    } else {
+      localStorage.theme = "light";
+      document.documentElement.classList.remove("dark");
+      console.log(localStorage.theme);
+    }
+  }, [isDarkTheme]);
+
   const updateTheme = () => {
+    console.log("theme is: ", isDarkTheme);
     setIsDarkTheme(!isDarkTheme);
   };
   return (
-    <div className="h-[60px] bg-main border-b-highLight border-b-2 flex justify-between items-center px-4">
+    <div className="h-[60px] dark:bg-main bg-white border-b-highLight border-b-2 flex justify-between items-center px-4">
       <div className="flex">
         <Link
           href={"/"}
