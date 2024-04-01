@@ -30,11 +30,11 @@ const Navbar: React.FC = () => {
     setIsDarkTheme(!isDarkTheme);
   };
   return (
-    <div className="h-[60px] dark:bg-main bg-white border-b-highLight border-b-2 flex justify-between items-center px-4">
+    <div className="h-[60px] dark:bg-main bg-white border-b-gray-300 dark:border-b-highLight border-b-2 flex justify-between items-center px-4">
       <div className="flex">
         <Link
           href={"/"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
         >
           <div className="hidden sm:block">
             <Home />{" "}
@@ -46,7 +46,7 @@ const Navbar: React.FC = () => {
         </Link>
         <Link
           href={"/About"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
         >
           <div className="hidden sm:block">
             <About />{" "}
@@ -58,7 +58,7 @@ const Navbar: React.FC = () => {
         </Link>
         <Link
           href={"/Blog"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
         >
           <div className="hidden sm:block">
             <Book />{" "}
@@ -71,7 +71,7 @@ const Navbar: React.FC = () => {
 
         <Link
           href={"/Vlog"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
         >
           <div className="hidden sm:block">
             <Video />{" "}
@@ -84,7 +84,7 @@ const Navbar: React.FC = () => {
 
         <Link
           href={"/Projects"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 border-highLight"
+          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
         >
           <div className="hidden sm:block">
             <CodeBracket />{" "}
@@ -97,7 +97,7 @@ const Navbar: React.FC = () => {
       </div>
       <div
         onClick={() => updateTheme()}
-        className="p-1 md:px-2 md:py-1 bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2 border-highLight"
+        className="p-1 md:px-2 md:py-1 dark:bg-main text-gray-300 mr-2 cursor-pointer hover:bg-highLight/20 rounded-md border-2  dark:border-highLight"
       >
         {isDarkTheme === true ? <Sun /> : <Moon />}
       </div>

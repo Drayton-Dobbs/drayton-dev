@@ -12,7 +12,7 @@ export default function Home() {
             </span>
             .
           </h2>
-          <p className="text-gray-200 w-full text-center ">
+          <p className="dark:text-gray-200 text-gray-500  w-full text-center ">
             Welcome to my space where I blend my journey as a full-stack
             developer with personal stories, adventures, and insights, aiming to
             connect, share, and inspire.

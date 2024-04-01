@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 export default function About() {
@@ -7,7 +6,7 @@ export default function About() {
       <div className="py-4 pl-5 font-bold text-4xl sm:text-7xl bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
         About Me
       </div>
-      <p className="tracking-wide px-6">
+      <p className="tracking-wide text-gray-500 px-6">
         Hey there, I&apos;m Drayton! Thanks for visiting my corner of the
         internet. Let me share a bit about my journey into the world of web
         development.{" "}
@@ -15,7 +14,7 @@ export default function About() {
       <div className="flex justify-start">
         <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide px-6">
+      <p className="tracking-wide text-gray-500 px-6">
         Growing up in poverty, I was determined to break the cycle and strive
         for more. When I was younger, I used to help my dad with his cleaning
         business. We cleaned all sorts of offices in Birmingham Alabama: law,
@@ -31,7 +30,7 @@ export default function About() {
       <div className="flex justify-start">
         <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide px-6">
+      <p className="tracking-wide text-gray-500 px-6">
         Back then, I had no real way to dive into coding until, years later,
         after being in the service industry for almost five years. I was
         introduced, by a good friend, to a free web development bootcamp called{" "}
@@ -53,7 +52,7 @@ export default function About() {
       <div className="flex justify-start">
         <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide px-6">
+      <p className="tracking-wide text-gray-500 px-6">
         {" "}
         In late 2019, I found my first job in the field at{" "}
         <Link href={"https://mossrock.com"}>
@@ -71,7 +70,7 @@ export default function About() {
       <div className="flex justify-start">
         <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide px-6">
+      <p className="tracking-wide text-gray-500 px-6">
         Over the past five years, I&apos;ve honed my skills and expertise in key
         areas of web development. I specialize in JavaScript (JS), TypeScript
         (TS), Node.js, and React/Next.js, leveraging these technologies to build
@@ -80,7 +79,7 @@ export default function About() {
       <div className="flex justify-start">
         <div className="mx-6 border-b w-1/12 my-4"></div>
       </div>
-      <p className="tracking-wide px-6">
+      <p className="tracking-wide text-gray-500 px-6">
         {" "}
         I&apos;m excited to share my experiences and insights with you, and I
         invite you to explore more about my work and connect with me to discuss
