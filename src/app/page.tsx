@@ -5,7 +5,7 @@ export default function Home() {
     <main className="w-full min-h-[calc(100vh-60px)] dark:bg-main bg-white pt-10 flex justify-center border-b-2 border-b-highLight ">
       <div className="flex w-3/4 justify-center">
         <div className="flex flex-col z-20">
-          <h2 className="text-6xl font-bold text-white mb-6 px-10 pt-10 text-center">
+          <h2 className="text-6xl font-bold text-gray-400 dark:text-white mb-6 px-10 pt-10 text-center">
             Hey there, I&apos;m{" "}
             <span className="bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
               Drayton

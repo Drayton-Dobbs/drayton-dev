@@ -12,88 +12,55 @@ import Link from "next/link";
 
 const Navbar: React.FC = () => {
   const [isDarkTheme, setIsDarkTheme] = useState(true);
+  const navItems: string[] = ["Home", "About", "Blog", "Vlog", "Projects"];
+
+  const navIconArray = [
+    { name: "Home", icon: Home },
+    { name: "About", icon: About },
+    { name: "Blog", icon: Book },
+    { name: "Vlog", icon: Video },
+    { name: "Projects", icon: CodeBracket },
+  ];
+
+  const renderIcon = (ni: string) => {
+    const matchingIcon = navIconArray.find((n) => n.name === ni);
+    if (matchingIcon) {
+      const Icon = matchingIcon.icon;
+      return <Icon />;
+    }
+  };
 
   useEffect(() => {
     if (isDarkTheme === true) {
       document.documentElement.classList.add("dark");
       localStorage.theme = "dark";
-      console.log(localStorage.theme);
     } else {
       localStorage.theme = "light";
       document.documentElement.classList.remove("dark");
-      console.log(localStorage.theme);
     }
   }, [isDarkTheme]);
 
   const updateTheme = () => {
-    console.log("theme is: ", isDarkTheme);
     setIsDarkTheme(!isDarkTheme);
   };
   return (
     <div className="h-[60px] dark:bg-main bg-white border-b-gray-300 dark:border-b-highLight border-b-2 flex justify-between items-center px-4">
       <div className="flex">
-        <Link
-          href={"/"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
-        >
-          <div className="hidden sm:block">
-            <Home />{" "}
-          </div>
-          <div>
-            {" "}
-            <div className="md:ml-1 text-sm">Home</div>
-          </div>
-        </Link>
-        <Link
-          href={"/About"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
-        >
-          <div className="hidden sm:block">
-            <About />{" "}
-          </div>
-          <div>
-            {" "}
-            <div className="md:ml-1 text-sm">About</div>
-          </div>
-        </Link>
-        <Link
-          href={"/Blog"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
-        >
-          <div className="hidden sm:block">
-            <Book />{" "}
-          </div>
-          <div>
-            {" "}
-            <div className="md:ml-1 text-sm">Blog</div>
-          </div>
-        </Link>
-
-        <Link
-          href={"/Vlog"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
-        >
-          <div className="hidden sm:block">
-            <Video />{" "}
-          </div>
-          <div>
-            {" "}
-            <div className="md:ml-1 text-sm">Vlog</div>
-          </div>
-        </Link>
-
-        <Link
-          href={"/Projects"}
-          className=" flex items-center justify-center p-1 md:px-2 md:py-1 bg-white  dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
-        >
-          <div className="hidden sm:block">
-            <CodeBracket />{" "}
-          </div>
-          <div>
-            {" "}
-            <div className="md:ml-1 text-sm">Projects</div>
-          </div>
-        </Link>
+        {navItems.map((ni: string) => {
+          return (
+            <Link
+              key={ni}
+              href={"/" + ni}
+              className="flex items-center justify-center p-1 md:px-2 md:py-1 bg-white dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/10 dark:hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
+            >
+              <div className="hidden sm:block">{renderIcon(ni)}</div>{" "}
+              {/* Fix applied here */}
+              <div>
+                <div className="md:ml-1 text-sm">{ni}</div>
+              </div>
+            </Link>
+          );
+        })}
       </div>
       <div
         onClick={() => updateTheme()}

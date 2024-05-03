@@ -27,21 +27,21 @@ function ProjectsPage(): JSX.Element {
 
   return (
     <div className="min-h-[calc(100vh-60px)]">
-      <h1 className="text-7xl font-bold mb-6 px-10 pt-10 bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
+      <h1 className="text-7xl font-bold mb-6 px-6 pt-6 bg-gradient-to-r from-teal-500 to-green-500 text-transparent bg-clip-text">
         Projects
       </h1>
       <div className="grid grid-cols-3 gap-3">
         {projects.map((project) => (
           <div
             key={project.id}
-            className="card bg-secondary hover:bg-third cursor-pointer "
+            className="card bg-gray-100 dark:bg-secondary hover:bg-third cursor-pointer dark:shadow-none shadow-md "
           >
             <Link href={project.html_url}>
               <div className="card-body">
-                <h2 className="text-lg text-gray-100 font-bold">
+                <h2 className="text-lg text-gray-400 font-bold">
                   {project.name}
                 </h2>
-                <p className="text-gray-200">{project.description}</p>
+                <p className="text-gray-400">{project.description}</p>
               </div>
             </Link>
           </div>
