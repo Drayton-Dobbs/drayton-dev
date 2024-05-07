@@ -50,7 +50,7 @@ const Navbar: React.FC = () => {
           return (
             <Link
               key={ni}
-              href={"/" + ni}
+              href={ni === "Home" ? "/" : "/" + ni}
               className="flex items-center justify-center p-1 md:px-2 md:py-1 bg-white dark:bg-main text-gray-500 dark:text-gray-300 mr-2 cursor-pointer hover:bg-highLight/10 dark:hover:bg-highLight/60 rounded-md border-2 dark:border-highLight"
             >
               <div className="hidden sm:block">{renderIcon(ni)}</div>{" "}
